@@ -9,8 +9,8 @@
 #include <WiFiUdp.h>
 #include <NTPClient.h>
 
-// Define NTP Client to get time
-WiFiUDP ntpUDP;
+// Define NTP Client to get time (All of this is needed to have a correct timestamp format)
+WiFiUDP ntpUDP;     
 NTPClient timeClient(ntpUDP, "pool.ntp.org");
 
 // Capacitive Soil Moisture Sensor Configuration
@@ -27,25 +27,21 @@ DHT dht(DHTPIN, DHTTYPE);
 
 //Firebase Portion
 /* 1. Define the WiFi credentials */
-// const char* ssid = "YoungsTown123";   // Wifi SSID
-// const char* password = "cornedbeef";  // Wifi Password
-
-const char* ssid = "PLDTHOMEFIBR-J0N43M";
-const char* password = "raymartwifi";
+const char* ssid = "YoungsTown123";   // Wifi SSID  (change it into your wifi ssid)
+const char* password = "cornedbeef";  // Wifi Password   (change it into your wifi password)
 
 /* 2. Define the API Key */
-#define API_KEY "AIzaSyDOIDgSedybvSSPD2TejDmtdD0SZNoPS7U"
+#define API_KEY "AIzaSyDOIDgSedybvSSPD2TejDmtdD0SZNoPS7U"   // your firebase API_KEY (found in firebase settings / firebase CDN)
 
 /* 3. Define the project ID */
-#define FIREBASE_PROJECT_ID "aquiferia-f9786"
+#define FIREBASE_PROJECT_ID "aquiferia-f9786"  // your firebase Project_ID (found in firebase settings / firebase CDN)
 
 /* 4. Define the user Email and password that already registered or added in your project */
 #define USER_EMAIL "jibreelgwapo@gmail.com"
-#define USER_PASSWORD "123456"
+#define USER_PASSWORD "123456"  
 
 //Define Firebase Data object
-FirebaseData fbdo;
-
+FirebaseData fbdo;    
 FirebaseAuth auth;
 FirebaseConfig config;
 
