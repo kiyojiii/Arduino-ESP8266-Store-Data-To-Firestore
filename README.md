@@ -21,7 +21,7 @@ Reminders:
    > For Soil Moisture Sensor
       *Soil Moisture Sensor Library,
    > For Firestore / Firebase (Very Important)
-      *Find "Firebase RTDB Arduino Library for ESP8266 and RP2040 Pico" by mobizt (I specifically use this one)
+      *Find "Firebase Arduino Client Library for ESP8266, ESP32 and RP2040 Pico" by mobizt (I specifically use this one)
       or Find "ESP8266 for Firebase" by mobizt
 5. Copy and Paste all the code into your Arduino IDE, don't forget to save it before editing the code, always read the comments in the code to avoid errors.
 6. After you are done with your code, you can press "Upload", "Upload" is simliar to "build / run" in VSCODE. 
