@@ -31,14 +31,14 @@ const char* ssid = "YoungsTown123";   // Wifi SSID  (change it into your wifi ss
 const char* password = "cornedbeef";  // Wifi Password   (change it into your wifi password)
 
 /* 2. Define the API Key */
-#define API_KEY "AIzaSyDOIDgSedybvSSPD2TejDmtdD0SZNoPS7U"   // your firebase API_KEY (found in firebase settings / firebase CDN)
+#define API_KEY "put your firebase API_KEY here"   // your firebase API_KEY (found in firebase settings / firebase CDN)
 
 /* 3. Define the project ID */
-#define FIREBASE_PROJECT_ID "aquiferia-f9786"  // your firebase Project_ID (found in firebase settings / firebase CDN)
+#define FIREBASE_PROJECT_ID "put your firebase PROJECT_ID here"  // your firebase Project_ID (found in firebase settings / firebase CDN)
 
 /* 4. Define the user Email and password that already registered or added in your project */
-#define USER_EMAIL "jibreelgwapo@gmail.com"
-#define USER_PASSWORD "123456"  
+#define USER_EMAIL "sample of your registered email here"
+#define USER_PASSWORD "password"  
 
 //Define Firebase Data object
 FirebaseData fbdo;    
